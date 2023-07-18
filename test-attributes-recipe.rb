@@ -1,7 +1,7 @@
 # In this recipe I will create attributes so that if there are 100 nodes and I want their information, then I can simply run a recipe using chef-client and get their details.
 
 file '/getInfo' do  #this will create a getInfo in my root directory
-content " I want to fetch the following information from my nodes
+content "I want to fetch the following information from my nodes
 
 HOSTNAME: ${node['hostname']}  #this will display the hostanme of that node
 
